@@ -28,10 +28,11 @@ const divide = (arr, n) => {
 
   return result;
 };
-};
 
+const arr = [1, 2, 3, 4, 1, 0, 2, 2];
 
+// Ask the user for the maximum sum
+const n = parseInt(prompt("Enter n: "), 10);
 
-const arr1 = [1, 2, 3, 4, 1, 0, 2, 2];
-const n1 = 5;
-console.log(divide(arr1, n1));
+// Show the result in an alert box
+alert(JSON.stringify(divide(arr, n)));
