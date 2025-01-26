@@ -30,5 +30,8 @@ const divide = (arr, n) => {
 };
 };
 
-const n = prompt("Enter n: ");
-alert(JSON.stringify(divide(arr, n)));
+
+
+const arr1 = [1, 2, 3, 4, 1, 0, 2, 2];
+const n1 = 5;
+console.log(divide(arr1, n1));
