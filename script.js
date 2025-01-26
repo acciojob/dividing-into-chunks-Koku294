@@ -1,11 +1,12 @@
-const arr = [1, 2, 3, 4, 1, 0, 2, 2];
+const arr = [1, 2, 3, 4, 1, 0, 2, 2];  // Define the array
+const n = 5;  // Define the maximum sum for each subarray
 
 const divide = (arr, n) => {
-  // Write your code here
-	 const result = []; // To store the subarrays
+  const result = []; // To store the subarrays
   let currentSubarray = []; // Temporary subarray
   let currentSum = 0; // The sum of elements in the current subarray
 
+  // Iterate through each element in the array
   for (let i = 0; i < arr.length; i++) {
     // Check if adding the current element exceeds the limit n
     if (currentSum + arr[i] <= n) {
@@ -29,7 +30,5 @@ const divide = (arr, n) => {
   return result;
 };
 
-const arr = [1, 2, 3, 4, 1, 0, 2, 2];
-const n = 5; 
-
-console.log(divide(arr, n));
+// Call the divide function with the array and maximum sum n
+console.log(divide(arr, n));  // Output: [[1, 2], [3], [4, 1, 0], [2, 2]]
