@@ -32,7 +32,7 @@ const divide = (arr, n) => {
 const arr = [1, 2, 3, 4, 1, 0, 2, 2];
 
 // Ask the user for the maximum sum
-const n = parseInt(prompt("Enter n: "), 10);
+const n = parseInt(prompt("Enter n: "),5);
 
 // Show the result in an alert box
 alert(JSON.stringify(divide(arr, n)));
